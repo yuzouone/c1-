@@ -1,14 +1,8 @@
 /*
 * @Author: Administrator
-* @Date:   2017-12-19 15:09:33
+* @Date:   2018-03-19 17:42:32
 * @Last Modified by:   Administrator
-* @Last Modified time: 2018-03-20 13:28:08
-*/
-/*
-* @Author: Administrator
-* @Date:   2017-12-19 15:09:33
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-12-19 17:59:09
+* @Last Modified time: 2018-03-21 17:31:43
 */
 *{
     margin: 0;
@@ -34,10 +28,32 @@ p{margin-bottom: 0;}
     .header img{
         display:none;
     }
-    .header p:nth-of-type(1){
-        color:#fffc00;
+    .header p:nth-of-type(2){
+        color:#179cff;
     }
-    .content{
+    .banner{
+        width: 100%;
+        position:relative;
+        /* background-image: url('../images/downloadapp_banner1.png'); */
+
+    }
+    .banner > img{
+        width: 100%;
+    }
+    .banner .loads{
+        width: 100%;
+        position:absolute;
+        bottom:10%;
+        display:-webkit-flex;
+        display: flex;
+    }
+    .loads img{
+        height: 30px;
+    }
+    .loads img:nth-of-type(2){
+        margin-left: 10px;
+    }
+    /* .content{
         width:100%;
         display:-webkit-flex;
         display: flex;
@@ -112,7 +128,7 @@ p{margin-bottom: 0;}
     }
     .left p:first-child{
         width:100%;
-        /* width:73px; */
+        width:73px;
     }
     .left p:last-child{
         color:#999999;
@@ -124,7 +140,6 @@ p{margin-bottom: 0;}
     .foot{
         width:100%;
         background:#000;
-        text-align: center;
 
     }
     .foot p:first-child{
@@ -134,7 +149,7 @@ p{margin-bottom: 0;}
 
         color:#fffc00;
 
-    }
+    } */
 }
 @media screen and (min-width: 900px) {
     .main{
@@ -165,11 +180,10 @@ p{margin-bottom: 0;}
     .header p:nth-of-type(1){
         font-size: 14px;
         margin-left: 279px;
-        color:#fffc00;
-
     }
     .header p:nth-of-type(2){
         margin-left: 78px;
+        color:#179cff;
 
     }
     .header p:nth-of-type(3){
@@ -178,7 +192,35 @@ p{margin-bottom: 0;}
     .header p:nth-of-type(4){
         margin-left: 78px;
     }
-    .content{
+    .banner{
+        width: 1200px;
+        height:674px;
+        position:relative;
+        /* background-image: url('../images/downloadapp_banner1.png'); */
+
+    }
+    .banner .loads{
+        position:absolute;
+        left:188px;
+        bottom:100px;
+        overflow: hidden;
+        display:-webkit-flex;
+        display: flex;
+    }
+    .loads img{
+        cursor:pointer;
+    }
+    .loads img:nth-of-type(2){
+        margin-left: 40px;
+    }
+    .container{
+        width: 1200px;
+        height:684px;
+        /* background:green; */
+        margin-top: 108px;
+    }
+
+    /* .content{
         width:100%;
         display:-webkit-flex;
         display: flex;
@@ -285,7 +327,7 @@ p{margin-bottom: 0;}
         color:#222222;
         margin-top: 76px;
         margin-left: 60px;
-        /* width:73px; */
+        width:73px;
     }
     .left p:last-child{
         font-size:14px;
@@ -318,8 +360,5 @@ p{margin-bottom: 0;}
         font-size:14px;
         color:#fffc00;
         margin-left: 60px;
-    }
+    } */
 }
-
-
-
