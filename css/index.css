@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-12-19 15:09:33
 * @Last Modified by:   Administrator
-* @Last Modified time: 2018-03-22 15:47:36
+* @Last Modified time: 2018-03-22 17:45:29
 */
 /*
 * @Author: Administrator
@@ -29,10 +29,11 @@ p{margin-bottom: 0;}
         justify-content:space-around;
         align-items: center;
         background:#000;
-        /* padding:10px 0; */
+        padding:6px 0;
     }
     .header img{
         /* display:none; */
+        height:20px;
     }
     .header p:nth-of-type(1){
         color:#179cff;
@@ -42,7 +43,7 @@ p{margin-bottom: 0;}
         display:-webkit-flex;
         display: flex;
         flex-direction:row;
-        align-items: center;
+        align-items: flex-start;
         flex-wrap: wrap ;
         justify-content: center;
     }
@@ -63,6 +64,8 @@ p{margin-bottom: 0;}
     .pic1 p:nth-of-type(2){
         width:90%;
         color:#222222;
+        font-size:16px;
+        font-weight: bold;
     }
     .pic1 p:nth-of-type(3){
         width:90%;
@@ -76,12 +79,12 @@ p{margin-bottom: 0;}
     }
     .pic3{
         width:48%;
-        margin-top: 20px;
+        margin-top: 40px;
     }
     .pic4{
         width:48%;
         font-size:12px;
-        margin-top: 20px;
+        margin-top: 40px;
     }
     .pic4 p:nth-of-type(1){
         width:90%;
@@ -94,6 +97,8 @@ p{margin-bottom: 0;}
         width:90%;
         color:#222222;
         margin-left: 10px;
+        font-size:16px;
+        font-weight: bold;
 
     }
     .pic4 p:nth-of-type(3){
@@ -126,6 +131,8 @@ p{margin-bottom: 0;}
     }
     .left p:first-child{
         width:90%;
+        font-size:16px;
+        font-weight: bold;
         /* width:73px; */
     }
     .left p:last-child{
