@@ -13,10 +13,9 @@
     <div class="main">
         <div class="header">
             <img src="../images/logo.png" alt="">
-            <p onclick="first()">首页</p>
-            <p>下载APP</p>
-            <p>加入CIST</p>
-            <p>关于我们</p>
+            <a onclick="first()">首页</a>
+            <a>下载APP</a>
+            <a href="#1F">联系我们</a>
         </div>
         <div class="banner">
             <img src="../images/downloadapp_banner1.png" alt="">
@@ -25,14 +24,40 @@
                 <img src="../images/Android-up_sel.png" alt="" onclick="loadandriod()">
             </div>
         </div>
-        <!-- <div class="container">
+        <div class="container">
             <img src="../images/phone.png" alt="">
-            <div class="right"></div>
+            <div class="right">
+                <span></span>
+                <p>自助选柜</p>
+                <p>方便快捷</p>
+                <p>APP内自助选择所租借货柜的位置，支持网上签约，在线支付等功能</p>
+            </div>
         </div>
-        <div class="container2"></div>
-        <div class="add">
-            <p>加入士哆便利</p>
-        </div> -->
+        <div class="container2">
+            <div class="container2_left">
+                <p>货柜的销售情况</p>
+                <p>一目了然</p>
+                <p>商户可随时随地查看货柜的今日销售情况和历史销售情况实时掌握商品动态</p>
+            </div>
+            <img src="../images/phone3.png" alt="">
+        </div>
+        <div class="add" name="1F">
+            <p><a name="1F">联系我们</a></p>
+            <div class="adress">
+                <div class="one">
+                    <img src="../images/call.png" alt="">
+                    <span>服务热线：020-85200349</span>
+                </div>
+                <div class="to">
+                    <img src="../images/mail.png" alt="">
+                    <span>客服邮箱：tsuix@wetripay.com</span>
+                </div>
+                <div class="three">
+                    <img src="../images/locate.png" alt="">
+                    <span>地址：广州市天河区富力盈隆广场20层</span>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
@@ -50,11 +75,16 @@
             $(this).siblings().attr('src','../images/apple_nor.png');
         }
     });
+    //下载
     function loadapple(){
         window.location.href = 'https://itunes.apple.com/cn/app/storeberry%E5%A3%AB%E5%93%86%E4%BE%BF%E5%88%A9/id1340671505?mt=8';
     }
     function loadandriod(){
         window.location.href = 'https://www.newasp.net/android/392298.html';
     }
+    //点击变颜色
+    $('.header a').on('click',function(){
+        $(this).css('color','#179cff').siblings().css('color','#999999');
+    });
 </script>
 </html>
